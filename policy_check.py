@@ -134,6 +134,7 @@ for device in device_list:
 
     if not line_descriptions:
         print (Fore.RED + " No customer interfaces found." + Fore.WHITE)
+        file.write(" No customer interfaces found.\n")
     
     # Find interfaces requiring policy types
     for description in line_descriptions:
